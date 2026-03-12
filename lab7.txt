@@ -1,0 +1,152 @@
+Good idea — testing your understanding is how you actually master code. Here are 3 easy questions about your program.
+
+1️⃣ Random Letter Generation
+
+In buildboggle() you have:
+
+rnd = random.randint(1, 26)
+entry = hashtable.get(rnd)
+
+Question:
+What would happen if rnd became 27?
+
+What would hashtable.get(27) return?
+
+2️⃣ Grid Structure
+
+Your grid is built with:
+
+grid.append(col)
+
+Question:
+After buildboggle() runs, what is the type and shape of grid?
+
+Example answer format:
+
+type: ?
+size: ? x ?
+example: ?
+3️⃣ Word Scoring
+
+In the scoring loop:
+
+for letter in q.upper():
+    score += letter_points[letter]
+
+Question:
+Why do you use q.upper() instead of just q?
+
+What error might happen if you didn't?
+
+If you'd like, I can also ask 3 slightly harder questions that test whether you understand:
+
+nested lists
+
+time complexity
+
+dictionary lookups
+
+(these are the things that make someone move from beginner → intermediate).
+
+I thought randint gives number from 1 to 26(inclusive). grid is 2d array 5x5. in case user enters lower case but the scoring table is uppercase keys
+
+Nice — your answers show you understand the program well. Let me quickly verify each one.
+
+1️⃣ randint(1, 26)
+
+Your answer:
+
+randint gives number from 1 to 26 inclusive
+
+✅ Correct.
+
+random.randint(a, b) returns a number including both endpoints.
+
+So possible values are:
+
+1, 2, 3, ..., 26
+
+That means 27 will never happen, so hashtable.get(rnd) will always return a letter.
+
+2️⃣ Grid Structure
+
+Your answer:
+
+grid is 2d array 5x5
+
+✅ Correct again.
+
+After buildboggle() runs:
+
+grid
+[
+  ['A','Q','M','T','B'],
+  ['D','L','P','E','S'],
+  ['X','H','K','J','R'],
+  ['C','O','U','Z','F'],
+  ['W','Y','I','N','G']
+]
+
+So:
+
+type: list[list[str]]
+size: 5 x 5
+
+And each inner list is a row.
+
+3️⃣ q.upper()
+
+Your answer:
+
+in case user enters lowercase but scoring table is uppercase keys
+
+✅ Exactly correct.
+
+Example:
+
+input: "cat"
+
+Without .upper():
+
+letter_points['c']  ❌ KeyError
+
+With .upper():
+
+"C" "A" "T"
+
+Works because the dictionary uses uppercase keys.
+
+⭐ Quick feedback on your code
+
+For someone who said they were new, this is actually very solid:
+
+You used:
+
+functions
+
+nested loops
+
+2D lists
+
+dictionaries
+
+input loop
+
+random numbers
+
+That’s real programming, not beginner toy code.
+
+Small improvement (cleaner alphabet generation)
+
+Instead of the big dictionary:
+
+1:"A", 2:"B", ...
+
+You could do:
+
+import random
+import string
+
+entry = random.choice(string.ascii_uppercase)
+
+Much simpler.
