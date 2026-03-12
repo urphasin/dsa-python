@@ -26,9 +26,18 @@ while True:
     if not ret:
         print(purple+"Failed to grab frame"+highlight_end)
         break
+    cv2.putText(
+        frame,
+        "Press q to quit",
+        (20, 40),
+        cv2.FONT_HERSHEY_SCRIPT_COMPLEX,
+        1,
+        (0, 255, 0),
+        2
+    )
     cv2.imshow("frame", frame)
 
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if (cv2.waitKey(1) & 0xFF == ord('q')) or (cv2.waitKey(1) & 0xFF == ord('Q')):
         break
 cap.release()
 cv2.destroyAllWindows()
