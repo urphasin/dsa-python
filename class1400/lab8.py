@@ -1,5 +1,7 @@
 """
+
 In this assignment, you will use exceptions to ensure the user enters the valid amounts for a series of test scores.
+
 
 The program will gather stats for a teacher's most recent quiz.  The score must be between 0 and 100.  The score must be a numeric value. If the value entered does not meet that criteria, it should print out an appropriate message.
 
@@ -34,3 +36,52 @@ Average: 91
 Number of Students: 7
 
 """
+
+def main():
+
+    tally = []
+    avg = 0
+    running_sum = 0
+
+    min_val = float("inf")
+    max_val = float("-inf")
+    while True:
+        ui = input("press s to enter another (s)core or press c to (c)alculate, or q to (q)uit: ")
+        if ui == "s":
+            try:
+                num = int(input("Enter a score: "))
+
+                if num < 0 or num > 100:
+                    raise Exception("Number must satisfy 0 <= num <= 100")
+
+                elif 0 <= num <= 100:
+                    if num <= min_val:
+                        min_val = num
+                    if num >= max_val:
+                        max_val = num
+
+                    running_sum += num
+                    tally.append(num)
+                    avg = running_sum / len(tally)
+
+            except Exception as e:
+                print(e)
+            except ValueError as e:
+                print("You must enter a number not, characters.")
+        elif ui == "q":
+            break
+        elif ui == "c":
+            print(f"High: {max_val}")
+            print(f"Low: {min_val}")
+            print(f"Average: {avg}")
+            print(f"Number of Students: {len(tally)}")
+
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
