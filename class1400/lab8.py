@@ -46,7 +46,7 @@ def main():
     min_val = float("inf")
     max_val = float("-inf")
     while True:
-        ui = input("press s to enter another (s)core or press c to (c)alculate, or q to (q)uit: ")
+        ui = input("press s to enter (s)core or press c to (c)alculate Avg, High, and Min , or q to (q)uit: ")
         if ui == "s":
             try:
                 num = int(input("Enter a score: "))
@@ -62,6 +62,7 @@ def main():
 
                     running_sum += num
                     tally.append(num)
+                    print(f"\x1b[95m{num}\x1b[0m entered into tally.")
                     avg = running_sum / len(tally)
 
             except Exception as e:
@@ -69,12 +70,15 @@ def main():
             except ValueError as e:
                 print("You must enter a number not, characters.")
         elif ui == "q":
+            print("Goodbye!")
             break
         elif ui == "c":
-            print(f"High: {max_val}")
-            print(f"Low: {min_val}")
-            print(f"Average: {avg}")
-            print(f"Number of Students: {len(tally)}")
+            print("\n\n")
+            print(f"\x1b[44mHigh\x1b[0m: {max_val}")
+            print(f"\x1b[41mLow\x1b[0m: {min_val}")
+            print(f"\x1b[42mAverage\x1b[0m: {avg}")
+            print(f"\x1b[30;47mNumber of Students\x1b[0m: {len(tally)}")
+            print("\n\n")
 
 
 if __name__ == "__main__":

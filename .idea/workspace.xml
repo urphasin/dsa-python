@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c2639fa-1523-4cf4-9833-1f815d73e465" name="Changes" comment="fold">
+    <list default="true" id="2c2639fa-1523-4cf4-9833-1f815d73e465" name="Changes" comment="push">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/class1400/lab8.py" beforeDir="false" afterPath="$PROJECT_DIR$/class1400/lab8.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +45,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Exceptions.executor": "Run",
+    "Python.lab8.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -79,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1773682109598</updated>
       <workItem from="1773682111082" duration="3438000" />
-      <workItem from="1773762430490" duration="1685000" />
+      <workItem from="1773762430490" duration="3336000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <option name="closed" value="true" />
@@ -105,7 +107,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773682511406</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="push">
+      <option name="closed" value="true" />
+      <created>1773777619426</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773777619426</updated>
+    </task>
+    <task id="LOCAL-00005" summary="push">
+      <option name="closed" value="true" />
+      <created>1773777705810</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773777705810</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,9 +133,11 @@
     <MESSAGE value="hello" />
     <MESSAGE value="push_t" />
     <MESSAGE value="fold" />
-    <option name="LAST_COMMIT_MESSAGE" value="fold" />
+    <MESSAGE value="push" />
+    <option name="LAST_COMMIT_MESSAGE" value="push" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/untitled$lab8.coverage" NAME="lab8 Coverage Results" MODIFIED="1773778990475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/class1400" />
     <SUITE FILE_PATH="coverage/untitled$Exceptions.coverage" NAME="Exceptions Coverage Results" MODIFIED="1773682160966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/class1400" />
   </component>
 </project>
