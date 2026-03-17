@@ -65,10 +65,10 @@ def main():
                     print(f"\x1b[95m{num}\x1b[0m entered into tally.")
                     avg = running_sum / len(tally)
 
-            except Exception as e:
-                print(e)
             except ValueError as e:
                 print("You must enter a number not, characters.")
+            except Exception as e:
+                print(e)
         elif ui == "q":
             print("Goodbye!")
             break
